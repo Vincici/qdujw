@@ -1,0 +1,61 @@
+body {
+    /*font: 12px/150% "宋体,微软雅黑";
+    color: #333;*/
+    background: #F6F6F6;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.login_box { width:1100px; margin:0 auto; text-align:left; padding:80px 0 0 0;}
+.login_box .login_l { float:left; width:610px; padding:45px 0 0 0; text-align:center;}
+.login_box .login_r { float:right; width:360px; height:350px; background:#FFF;  padding-top:5px; border-radius: 15px; opacity: 0.7;}
+.login_box .login_r h3 { font-size:16px; color:#333; font-family:"微软雅黑"; border-bottom:#E0E0E0 solid 1px; text-align:center; height:35px; line-height:35px;}
+.backimg{
+    background: url(../image/index.jpg);
+    background-size: 100% 100%;
+    min-width: 1200px;
+    min-height: 670px;
+}
+.backimg .cnt1200 a{
+    font-size: 12px;
+    color: #06c;
+}
+.backimg .cnt1200 a:hover{
+    color: #EE6363;
+    text-decoration: underline;
+}
+.login_form { padding:20px 0 0 0; position: relative;}
+.login_form li { min-height:59px; font-size:14px;}
+.login_form li input { padding:0 0 0 6px; vertical-align:middle;}
+.cnt1200 {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    clear: both;
+    overflow: hidden;
+}
+.erro_tip{
+    display: none;
+    height: 35px;
+    line-height: 20px;
+}
+.backimg .cnt1200 a:hover{
+    color: #EE6363;
+    text-decoration: underline;
+}
+.login_list { margin: 0 auto;  width: 270px;}
+.login_list #tab1 { padding-top:0;}
+.login_list .tabson { margin: 0px 0px;
+}
+.submit_sx { width:270px; position:relative;}
+.submit_sx span { position:absolute; top:20px; left:195px;}
+.isubmit-login { width:200px; height:50px; line-height:38px; color:#FFF; font-size:20px; font-family:"微软雅黑";text-align:center; border:0;background: #00f293; border-radius: 5px;}
+.isubmit-login:hover{
+    background: #ee7e00;
+}
+.clear {
+    clear: both;
+    margin: 0 auto;
+}
+.iinput-login { border:#D7D7D7 solid 1px; height:36px; line-height:36px; width:260px; font-size:14px;}

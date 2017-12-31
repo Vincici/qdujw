@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jw.mapper.RoleMapper">
+    <resultMap id="RoleMapVO" type="com.jw.pojo.RoleInfo">
+        <result column="roleId" property="roleId"/>
+        <result column="roleName" property="roleName"/>
+    </resultMap>
+
+    <select id="getARole" resultMap="RoleMapVO">
+        SELECT
+        r.roleId,
+        r.roleName
+        FROM roles r, user_role ur
+        WHERE ur.userName = #{userName} AND ur.roleId = r.roleId
+    </select>
+
+    <select id="allRole" resultMap="RoleMapVO">
+        SELECT
+            roleId,
+            roleName
+        FROM roles
+    </select>
+
+    <!--添加角色-->
+    <insert id="addRole">
+        INSERT INTO
+            roles (roleName)
+        VALUES
+            (#{roleName})
+    </insert>
+
+    <!--修改角色-->
+    <update id="updateRole">
+        UPDATE roles
+        SET roleName = #{roleName}
+        WHERE roleId = #{roleId}
+    </update>
+
+    <!--查询属于当前角色的用户数量-->
+    <select id="countRoleOfUser">
+        SELECT count(*)
+        FROM user_role
+        WHERE roleId = #{roleId}
+    </select>
+
+    <!--删除角色-->
+    <delete id="deleteRole">
+        DELETE FROM roles
+        WHERE roleId = #{roleId}
+    </delete>
+
+    <!--删除用户拥有的角色-->
+    <delete id="deleteRoleOfUser">
+        DELETE FROM user_role
+        WHERE roleId = #{roleId}
+    </delete>
+
+    <!--删除角色拥有的权限-->
+    <delete id="deletePermissionOfRole">
+        DELETE FROM role_permission
+        WHERE roleId = #{roleId}
+    </delete>
+
+</mapper>

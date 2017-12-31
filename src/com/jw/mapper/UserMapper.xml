@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jw.mapper.UserMapper">
+    <resultMap id="UserMapVO" type="com.jw.pojo.UserInfo">
+        <id column="userName" property="userName"/>
+        <result column="nickName" property="nickName"/>
+        <result column="password" property="password"/>
+        <result column="status" property="status"/>
+    </resultMap>
+    <select id="login" resultMap="UserMapVO">
+        SELECT userName, nickName, password, status from users  where userName=#{userName} and password=#{password}
+    </select>
+
+
+    <select id="getUserByUserName" resultMap="UserMapVO">
+        SELECT userName, nickName, password, status from users  where userName=#{userName}
+    </select>
+
+    <update id="modifyPassword">
+        UPDATE users set password=#{password} WHERE userName=#{userName}
+    </update>
+
+
+</mapper>

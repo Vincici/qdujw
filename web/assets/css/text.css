@@ -1,0 +1,162 @@
+html{ background:#fff;}
+body{  padding:0px; margin:0px; text-align:center; line-height:150%; font-size:13px; font-family:"����",Arial,verdana,sans-serif ;}
+
+div.pre{width:540px;overflow:hidden;}
+pre{margin:0;padding:0;word-wrap:break-word;width:540px;display:block;word-break:break-all;}
+
+div.newpre{width:95%;overflow:hidden;}
+div.newpre pre{margin:0;padding:0;word-wrap:break-word;width:99%;display:block;word-break:break-all;}
+
+a{ color:#000; text-decoration:underline;font-size:13px;font-family:"����",Arial,sans-serif;letter-spacing:1px;}
+a:hover{ color: #00F; text-decoration:none;}
+a.statusnatural{ color: #060; text-decoration:none;}
+a.statusnatural:hover{color: #060; text-decoration:underline;}
+a.statushalt{color: #c00; text-decoration:none;}
+a.statushalt:hover{color: #c00; text-decoration:underline;}
+a.download{color: #BE620E; text-decoration:none;}
+a.download:hover{color: #B68229; text-decoration:underline;}
+
+table.datalist  tbody td a.un{text-decoration:underline;}
+table.datalist  tbody td a.un:hover{text-decoration:none;}
+
+a.systemset{letter-spacing: 2px;color: #000000;text-decoration: none;}
+a.systemset:hover {letter-spacing: 2px;color: #A76501;	text-decoration: none;}
+
+em,td,th{font:13px/100% "����",Arial,sans-serif;letter-spacing:1px;}
+em.statushalt{color: #c00;font-style: normal;line-height:150%}
+em.statusnatural{	color: #060;font-style: normal;line-height:150%}
+em.explain{color: #993300;font-style: normal;}
+/*hint*/
+em.hint{color: #993300;font-style: normal;font-weight:bold;padding:0 10px;}
+em.error{color:#f00;font-style:normal;padding:0 10px;}
+em.star{font-size:15px;color:#930;font-style: normal;padding:0 10px;line-height:70%}
+em.perm{color:#606;}
+img{border:0;}
+
+form{margin:0;padding:0;}
+textarea{width:80%;height:60px;}
+textarea,input.input{ border:1px solid #000;}
+input.input , input.sffocus , input.input:focus{ height:18px;}
+/*----for IE----*/
+input.sffocus , textarea.sffocus{background: #F0F9FB; border: 1px solid #000;}
+/*----for firefox----*/
+textarea:focus,input.input:focus{background: #F0F9FB; border: 1px solid #000;}
+
+input.mybutton1{cursor:pointer;  font-size: 0px;text-decoration: none;letter-spacing: 1px;width:111px;_width:250px;height:25px;_height:37px;verflow:visible;background:#FEF9E6 url(../image/lookatsay.png) center center no-repeat;border: 0px;margin-top:1px;	line-height:90%;_width:150px;_display:inline;}
+
+input.thebn{ font-size: 12px;width:auto;}
+input.button{ font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 10px 0 10px !important;	padding:4px 10px 0 10px;overflow:visible;background:#FEF9E6 url(../image/button1.jpg) left bottom repeat-x;border: 1px solid #D18C0C;height:18px;font-family: "����";color: #333333;	margin-top:1px;	line-height:90%; }
+input.outie6button{_width:100px; text-align:center; padding-left:5px; padding-right:5px;_background-attachment:none;}
+input.button:hover{	font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 10px 0 10px !important;padding:4px 10px 0 10px;overflow:visible;background:#FEF9E6 url(../image/button.jpg) left top repeat-x;border: 1px solid #D18C0C;height:18px;font-family: "����";color: #333333;	margin-top:1px;	line-height:90%;}
+
+/*for IE6 bug*/
+input.button1{ font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 6px 2 6px !important;padding: 0 6px;background:#FEF9E6 url(../image/button1.jpg) left bottom repeat-x;border: 1px solid #D18C0C;height:18px!important;font-family: "����";color: #333333;}
+input.button1:hover{background:#FEF9E6 url(../image/button.jpg) left top repeat-x;}
+input.expandall{background:url(../image/expandAllButton.png) 80px center no-repeat; width:48px; height:18px;border:0px; }
+
+span.select{ vertical-align: top !important;z-index:1;vertical-align:baseline;margin-left:2px !important;margin-top:-5px !important;margin:0px; overflow: hidden; height: 18px; border:1 solid #000;}
+span.select select{ margin:-2px;z-index:1;font-size:12px;height:20px !important; color: #000; border:1px solid #000}
+
+select.multiple{border:1px solid #000;}
+
+div.c{margin:0 auto;text-align:center;}
+div.pre{width:540px;overflow:hidden;}
+
+/**/
+td.classicLookSummary b{color:#000066;font-weight:normal;margin:0 3px}
+input.classicLook{ border:1px solid #000;height:18px;width:30px;margin-right:5px;}
+input.classicLook:focus{background: #F0F9FB; border: 1px solid #000;}
+
+input.ItemsPerPageSubmitButton{width:40px; font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 10px 0 10px !important;	padding:4px 10px 0 10px;overflow:visible;background:#FEF9E6 url(../image/button1.jpg) left bottom repeat-x;border: 1px solid #D18C0C;height:18px;font-family: "����";color: #333333;	margin-top:1px;	line-height:90%;}
+input.ItemsPerPageSubmitButton:hover{width:40px;	font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 10px 0 10px !important;padding:4px 10px 0 10px;overflow:visible;background:#FEF9E6 url(../image/button.jpg) left top repeat-x;border: 1px solid #D18C0C;height:18px;font-family: "����";color: #333333;	margin-top:1px;	line-height:90%;}
+
+input.ItemsPerPageInputBox{ border:1px solid #000;height:18px;width:30px;margin-right:5px;}
+input.ItemsPerPageInputBox:focus{ background: #F0F9FB; border: 1px solid #000;}
+
+input.goInput{ border:1px solid #000;height:18px;width:30px;margin-right:5px;}
+input.goInput:focus{ background: #F0F9FB; border: 1px solid #000;}
+
+input.middleInput{ border:1px solid #000;height:18px;width:60px;margin-right:5px;}
+input.middleInput:focus{ background: #F0F9FB; border: 1px solid #000;}
+
+input.goButton{width:40px; font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 10px 0 10px !important;	padding:4px 10px 0 10px;overflow:visible;background:#FEF9E6 url(../image/button1.jpg) left bottom repeat-x;border: 1px solid #D18C0C;height:18px;font-family: "����";color: #333333;	margin-top:1px;	line-height:90%;}
+input.goButton:hover{width:40px;	font-size: 12px;text-decoration: none;letter-spacing: 1px;padding:2px 10px 0 10px !important;padding:4px 10px 0 10px;overflow:visible;background:#FEF9E6 url(../image/button.jpg) left top repeat-x;border: 1px solid #D18C0C;height:18px;font-family: "����";color: #333333;	margin-top:1px;	line-height:90%;}
+
+
+
+/*error page*/
+#error{
+    width:677px;
+    margin:0 auto;
+    background:url(../image/ds_error_bg.jpg) 0 0 repeat-y;
+}
+#error div.top{
+    background:url(../image/ds_error_top.jpg) 0 0 no-repeat;
+    height:250px;
+}
+#error div.button{
+    padding-top:138px;
+    margin-left:386px;
+    width:102px;
+    height:36px;
+}
+#error div.button a{
+    display:block;
+    height:36px;
+    text-decoration:none;
+    background:url(../image/ds_back1.jpg) 0 0 no-repeat;
+}
+#error div.button a:hover{
+    background:url(../image/ds_back2.jpg) 0 0 no-repeat;
+}
+#error div.errorStr{
+    margin:50px 100px 0 70px;
+    font-family: "����";
+	font-size: 14px;
+	color: #A20000;
+	letter-spacing: 2px;
+	line-height: 170%;
+    text-align:left;
+}
+#error div.bottom{
+    background:url(../image/ds_error_bottom.jpg) bottom 0 no-repeat;
+    height:23px;
+}
+
+    #aerror{width:573px;margin:0 auto;text-align:left;background:url(../image/alumni_error4.jpg) left top repeat-y;overflow:hidden;}
+	#aerror .etop{background:url(../image/alumni_error1.jpg) no-repeat;height:182px;}
+	#aerror .etop div{padding:47px 0 0 81px;}
+	#aerror .etop div a{background:url(../image/alumni_error5.gif) no-repeat;display:block;width:120px;height:18px;}
+	#aerror .ebody{background:url(../image/alumni_error2.jpg) left top no-repeat;}
+	#aerror .ebody .etext{margin:0px 115px 10px 58px;font:13px/140% "";color:#A20000;letter-spacing:1px;}
+	#aerror .efoot{background:url(../image/alumni_error3.jpg) no-repeat;height:26px;}
+
+
+	div.alert_wrap{width:565px;margin:0 auto;background:url(../image/alert_bg.jpg) left top repeat-y;margin-top:100px;}
+	div.alert_bottom{background:url(../image/alert_bottom.jpg) left bottom no-repeat;padding-bottom:50px;}
+	div.alert_top{background:url(../image/alert_top.jpg) left top no-repeat;padding:60px 20px 0 20px;}
+	div.alert_content{background:url(../image/alert_ico.jpg) 10px top no-repeat;padding:20px 0 0 120px;font:13px/160% Arial;color:#333;letter-spacing:1px;text-align:left;}
+	div.alert_content ul{margin:0;padding:0;margin-left:18px;}
+    div.alert_button{text-align:center;padding:20px 0;}
+	div.alert_button input{border:1px solid #9BB5DE;background:url(../image/alert_button_bg.jpg) left center repeat-x;height:24px;font:12px/24px Arial;color:#1E4F7B;letter-spacing:3px;cursor:pointer;}
+    #divCourseGroupInfo{margin-bottom:30px;}
+
+/*unuse a*/
+
+
+/*avaidable��unavaidable*/
+.available{color:green;}
+
+
+/*td.myright*/
+td.myright{text-align:center;}
+
+
+
+.tdcenter{text-align:center;}
+
+
+/*myleft is set to left*/
+.myleft{width:80px;}
+
+

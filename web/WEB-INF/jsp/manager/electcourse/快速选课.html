@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0067)http://211.64.164.72/academic/manager/electcourse/stusced.do#fastsc -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>选课名单</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- Mimic Internet Explorer 7 -->
+      
+    <link href="./快速选课_files/text.css" rel="stylesheet" type="text/css">
+    <link href="./快速选课_files/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" language="javascript" src="./快速选课_files/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="./快速选课_files/function.js"></script>
+    <script type="text/javascript" language="javascript" src="./快速选课_files/common.js"></script>
+    <script type="text/javascript" language="javascript" src="./快速选课_files/selectDate.js"></script></head><body><div id="__calendarPanel" style="position:absolute;visibility:hidden;z-index:9999;background-color:#FFFFFF;border:1px solid #666666;width:200px;height:216px;">
+<iframe name="__calendarIframe" id="__calendarIframe" width="100%" height="100%" scrolling="no" frameborder="0" style="margin:0px;" src="./快速选课_files/saved_resource.html"></iframe>
+</div>
+
+    <script type="text/javascript" language="javascript" src="./快速选课_files/selectTime.js"></script>
+    <script type="text/javascript" language="javascript" src="./快速选课_files/page.js"></script>
+
+    <script type="text/javascript" language="javascript" src="./快速选课_files/selectDateTime.js"></script><style>#__calendarTime{margin:0;padding:0;background:#000}div.calendarDivTime{ margin:0;padding:0;border:1px solid #000;}div.calendarDivTime span{cursor:pointer}th,td{margin:0;padding:0px}table.calendarTableTime{ margin:0;padding:0;width:100%}table.calendarTableTime th ,table.calendarTableTime td{font:12px/20px Arial,sans-serif;text-align:center;}table.calendarTableTime thead th.week{border-top:1px solid #CCC;border-bottom:1px solid #ccc;background:#EEE;}table.calendarTableTime thead tr.function th{border:1px solid #fff}table.calendarTableTime tr{background:#fff}table.calendarTableTime thead tr.top{letter-spacing:1px;}table.calendarTableTime thead a{color:#000;width:19px;height:18px;text-decoration:none;display:block;border:1px solid #ccc;background:#E1F1FF;}table.calendarTableTime tbody a:hover{color:#990;width:19px;height:18px;text-decoration:none;display:block;border:1px solid #ccc;background:#E1F1FF;}table.calendarTableTime thead a.today{width:98% !important;width:100%}table.calendarTableTime thead a.today:hover{width:98% !important;width:100%}table.calendarTableTime td{width:21px;height:20px;border-bottom:1px solid #E6E6E6;color:#fff;}table.calendarTableTime th{height:21px;}table.calendarTableTime tr.com{background:#fff;}table.calendarTableTime tr.cur{background:#F0FAFF;}table.calendarTableTime tbody a{color:#000;width:19px;height:18px;text-decoration:none;display:block;border:1px solid #fff;}table.calendarTableTime tbody a:hover{color:#990;width:19px;height:18px;text-decoration:none;border:1px solid #E6E6E6;background:#E1F1FF;display:block;}table.calendarTableTime tbody a.today{color:#c00;border:1px solid #DBDBDB;background:#CCE4FF;}table.calendarTableTime tbody a.today:hover{color:#990;border:1px solid #DBDBDB;background:#CCE4FF;}table.calendarTableTime tbody a.week{color:#c00;}div.calendarTfoot{background:#EEE;text-align:center;}div.calendarTfoot table{width:100%}table.calendarTfoot td{background:#EEE;width:auto;text-align:center}table.calendarTfoot td span{cursor:pointer;display:block;color:#000;}table.calendarTfoot td span{cursor:pointer;display:block;color:#000;}table.calendarTfoot td.maohao{text-align:center;color:#000}table.calendarTfoot td input{border:1px solid #ccc;background:#E1F1FF;}</style><div id="__calendarTime" style="width: 158px; position: absolute; display: none; z-index: 9998; height: 170px !important; top: 0px; left: 0px;"><div id="__calendarDivTime" class="calendarDivTime"><table cellspacing="0" cellpadding="0" class="calendarTableTime"><thead><tr class="top"><th>&nbsp;</th><th colspan="5" id="sohwdateTime"><span id="showyearTime"></span>-<span id="showmonthTime"></span></th><th><a href="javascript:void(0);" title="关闭" onclick="shutTime()">C</a></th></tr><tr class="function"><th><a href="javascript:void(0);" title="上一年" onclick="preYearTime()">&lt;&lt;</a></th><th><a href="javascript:void(0);" title="上月" onclick="preMonthTime()">&lt;</a></th><th colspan="3"><a href="javascript:void(0);" class="today" title="今天" onclick="getDateTime(&#39;0&#39;)">今天</a></th><th><a href="javascript:void(0);" title="下月" onclick="nextMonthTime()">&gt;</a></th><th><a href="javascript:void(0);" title="下一年" onclick="nextYearTime()">&gt;&gt;</a></th></tr><tr><th class="week">日</th><th class="week">一</th><th class="week">二</th><th class="week">三</th><th class="week">四</th><th class="week">五</th><th class="week">六</th></tr></thead><tbody id="calendarTbodyTime"></tbody></table><div class="calendarTfoot" id="_calendarTfoot"><table><tbody><tr><td width="20%">&nbsp;</td><td id="_hourTime" width="20%"></td><td class="maohao" width="8%">:</td><td id="_minuteTime" width="20%"></td><td><input type="button" value="OK" onclick="calCloseTime()"></td></tr></tbody></table></div></div></div><iframe id="__calframeTime" src="javascript:false;" scrolling="no" frameborder="0" style="position: absolute; display: none; background-color: rgb(255, 255, 255); top: 0px; left: 0px;" src="./快速选课_files/saved_resource(1).html">&amp;nbsp;</iframe>
+       <script type="text/javascript" language="javascript" src="./快速选课_files/j_common.js"></script>
+      <script type="text/javascript" language="javascript" src="./快速选课_files/depCommon.js"></script>
+
+      
+
+      <!--[if lt IE 7]>
+
+<script src="/styles/js/jquery.bgiframe.min.js" type="text/javascript"></script>
+<![endif]-->
+      <script type="text/javascript" src="./快速选课_files/engine.js">
+      <script type='text/javascript' src='/academic/dwr/util.js'/>
+      <script type='text/javascript' src='/academic/dwr/interface/pushStart.js'/>
+      <script type="text/javascript">
+          function push(){
+              pushStart.sendMessageAuto("接收人ID","推送内容，可在java后台更改");
+          }
+      </script>
+                                  
+  
+    <center>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./快速选课_files/jquery.js"></script>
+    <script type="text/javascript" src="./快速选课_files/theol.js"></script>
+    <script type="text/javascript" src="./快速选课_files/electcourse.js"></script>
+    <link href="./快速选课_files/jquery.ui.all.css" rel="stylesheet" type="text/css">
+    <link href="./快速选课_files/frame.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        table.from {
+            border: 1px solid #c49760;
+        }
+
+        #logo {
+            position: relative;
+        }
+    </style>
+
+    <title></title>
+
+
+
+
+<script type="text/javascript">
+
+
+    $(function () {
+        $("#updown").click(function () {
+
+            $("#logo").toggle();
+            $(this).toggleClass("down");
+            $(this).toggleClass("up");
+        });
+        initalert();
+
+    });
+
+    function checkform() {
+        var mytrue = true;
+        if ($("input[name='seq']").val() == "") {
+            alert("格式不对");
+            mytrue = false;
+        }
+        else if ($("input[name='pcourseid']").val() != "" && isNaN($("input[name='seq']").val())) {
+            alert("格式不对");
+            mytrue = false;
+        }
+        else if ($("input[name='pcourseid']").val() == "") {
+            alert("格式不对");
+            mytrue = false;
+        }
+        /*       else if($("input[name='captchaCode']").val()=="")
+         {
+         alert("请输入验证码！");
+         mytrue=false;
+         }*/
+        else {
+            mytrue = true;
+        }
+
+        if (mytrue)
+            showLoading("\u8BF7\u60A8\u8010\u5FC3\u7B49\u5F85...", false);
+
+        return mytrue;
+
+    }
+
+    
+
+    $(function () {
+        initalert('', 0);
+    });
+
+
+</script>
+
+<div id="header" style="height:auto; width:100%;margin-left:auto;margin-right:auto;">
+    <div class="header" style="height:auto;">
+        <div id="logo" style="height:115px;">
+            <div class="topwel">
+                
+
+
+
+
+
+
+
+
+<span>姓名: <span class="objectom">王树文</span></span> &nbsp;&nbsp;
+<span>学号:<span class="objectom">201540705001</span> </span> &nbsp;&nbsp;
+<span>班级:<span class="objectom"> 15软件（Java）10</span> </span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://211.64.164.72/academic/common/security/electiveLogout.jsp">退出</a>
+
+
+
+            </div>
+        </div>
+        <div id="slowup" style="height:11px;text-align:center">
+            <div id="slowleft">
+                <div id="slowright"><a class="up" id="updown"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="container" style="min-height:768px;">
+    <div id="bodycer" style="min-height:768px;">
+
+        <div class="titlewrap">
+            <div class="title">学生选课</div>
+        </div>
+
+
+        <div class="subtitle">
+            <div class="titletext">
+                已选课程
+            </div>
+        </div>
+        <table width="100%" class="datalist">
+
+            <tbody><tr class="">
+                <th>
+                    课程号
+                </th>
+                <th>
+                    课程名称
+                </th>
+                <th>
+                    课序号
+                </th>
+                <th>学分</th>
+                <th>选课属性</th>
+                <th>考核方式</th>
+                <th>
+                    课程安排
+                </th>
+                <th>&nbsp; </th>
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C07080900607
+                </td>
+                <td>计算机操作系统基础
+                </td>
+                <td class="center">7
+                </td>
+
+                <td>4.5
+                </td>
+
+                <td class="center">
+                    必修
+                </td>
+                <td class="center">考试
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;302008591&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C07080902606
+                </td>
+                <td>数据库系统及开发
+                </td>
+                <td class="center">5
+                </td>
+
+                <td>3.5
+                </td>
+
+                <td class="center">
+                    必修
+                </td>
+                <td class="center">考试
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;302036064&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C07080902607
+                </td>
+                <td>用HTML5设计富界面
+                </td>
+                <td class="center">12
+                </td>
+
+                <td>3
+                </td>
+
+                <td class="center">
+                    必修
+                </td>
+                <td class="center">考试
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;301981849&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C23000101005
+                </td>
+                <td>毛泽东思想和中国特色社会主义理论体系概论（下）
+                </td>
+                <td class="center">5
+                </td>
+
+                <td>3
+                </td>
+
+                <td class="center">
+                    必修
+                </td>
+                <td class="center">考试
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;301852157&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C07080902620
+                </td>
+                <td>NIIT学期项目III
+                </td>
+                <td class="center">10
+                </td>
+
+                <td>1
+                </td>
+
+                <td class="center">
+                    必修
+                </td>
+                <td class="center">考查
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;301980180&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C25000105010
+                </td>
+                <td>轮滑（男生A类下）
+                </td>
+                <td class="center">2
+                </td>
+
+                <td>1
+                </td>
+
+                <td class="center">
+                    限选
+                </td>
+                <td class="center">考试
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;301806099&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+            <tr class="">
+
+                <td>C24000102006
+                </td>
+                <td>大学英语Ⅵ
+                </td>
+                <td class="center">27
+                </td>
+
+                <td>3
+                </td>
+
+                <td class="center">
+                    限选
+                </td>
+                <td class="center">考试
+                </td>
+                <td><img src="./快速选课_files/see.gif" alt="课程安排" onmouseover="getDetailInfo(&#39;301962267&#39;,&#39;3&#39;,this)" class="center">
+                </td>
+
+                <form action="http://211.64.164.72/academic/manager/electcourse/removestusc.do" method="post"></form>
+                    <td class="center">
+
+                        
+                        
+                            
+                        
+                    </td>
+                
+
+            </tr>
+
+
+            
+
+
+        </tbody></table>
+        <br>
+        
+        <div class="subtitle">
+            <div class="titletext">
+                <a name="fastsc" id="fastsc"></a>快速选课
+            </div>
+        </div>
+
+        <form action="http://211.64.164.72/academic/manager/electcourse/scaddaction.do" method="post">
+            <table cellspacing="0" cellpadding="0" class="form">
+                <tbody><tr>
+                    <td width="65%" align="left">
+
+                        课程号
+                        <input type="text" name="pcourseid" class="input">
+                        &nbsp;&nbsp;
+                        课序号
+                        <input name="seq" type="text" size="4" class="input">
+                        
+
+
+                        <input type="hidden" name="checkUserid" value="565540">
+                        &nbsp;&nbsp; <input type="submit" name="Submit" value="选课" class="button" onclick="return checkform()">
+                    </td>
+                </tr>
+            </tbody></table>
+        </form>
+
+        <br> 
+        
+
+
+    
+    
+
+         
+            
+
+                <input name="b1" type="button" value="限选选课" style="_display:inline;" class="button" onclick="location.href=&#39;./electScheduleCourseList.do?propSc=1&#39;"> &nbsp;
+
+            
+            
+        
+
+
+    
+    
+
+    <input style="_display:inline;" name="b2" type="button" value="已选课程" class="button" onclick="location.href=&#39;./stusced.do&#39;">&nbsp;
+
+
+
+    <input style="_display:inline;" name="b2" type="button" value="快速选课" class="button" onclick="location.href=&#39;./stusced.do#fastsc&#39;">&nbsp;
+
+
+<input name="b2" style="_display:inline;" type="button" value="选课提示" class="button" onclick="location.href=&#39;./mgspage.do&#39;"> &nbsp;
+
+
+
+    <input type="button" name="button" value="全校开课查询" class="button" onclick="window.open(&#39;./prefindcc.do&#39;)">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+<div id="alertdiv" style="display:none;"></div>
+<div id="successdiv" style="display:none;"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $("div#overlay,div#loading").hide();//隐藏页面等待提示遮罩
+    });
+
+</script>
+
+    </center>
+  
+
+<div id="overlay" style="width: 1351px; height: 934px; opacity: 0.5; display: none;"></div><div id="loading" style="display: none;"><p><span class="description">页面加载中，请稍候。。。</span></p></div></body></html>

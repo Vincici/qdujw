@@ -1,0 +1,253 @@
+<!--
+body {
+    font-size: 12px;
+    margin: 0px;
+    text-align: center;
+}
+
+form {
+    margin: 0px;
+}
+
+select {
+    font-size: 12px;
+    background-color: #EFEFEF;
+}
+
+table {
+    border: 0px solid #CCCCCC;
+    background-color: #FFFFFF
+}
+
+th {
+    font-size: 12px;
+    font-weight: normal;
+    background-color: #FFFFFF;
+}
+
+th.theader {
+    font-weight: normal;
+    background-color: #666666;
+    color: #FFFFFF;
+    width: 24px;
+}
+
+select.year {
+    width: 66px;
+}
+
+select.month {
+    width: 60px;
+}
+
+td {
+    font-size: 12px;
+    text-align: center;
+}
+
+td.sat {
+    color: #0000FF;
+    background-color: #EFEFEF;
+}
+
+td.sun {
+    color: #FF0000;
+    background-color: #EFEFEF;
+}
+
+td.normal {
+    background-color: #EFEFEF;
+}
+
+input.l {
+    border: 1px solid #CCCCCC;
+    background-color: #EFEFEF;
+    width: 20px;
+    height: 20px;
+}
+
+input.r {
+    border: 1px solid #CCCCCC;
+    background-color: #EFEFEF;
+    width: 20px;
+    height: 20px;
+}
+
+input.b {
+    border: 1px solid #CCCCCC;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 20px;
+}
+
+-->
+#__calendarTime {
+    margin: 0;
+    padding: 0;
+    background: #000
+}
+
+div.calendarDivTime {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+div.calendarDivTime span {
+    cursor: pointer
+}
+
+th, td {
+    margin: 0;
+    padding: 0px
+}
+
+table.calendarTableTime {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+table.calendarTableTime th, table.calendarTableTime td {
+    font: 12px/20px Arial, sans-serif;
+    text-align: center;
+}
+
+table.calendarTableTime thead th.week {
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #ccc;
+    background: #EEE;
+}
+
+table.calendarTableTime thead tr.function th {
+    border: 1px solid #fff
+}
+
+table.calendarTableTime tr {
+    background: #fff
+}
+
+table.calendarTableTime thead tr.top {
+    letter-spacing: 1px;
+}
+
+table.calendarTableTime thead a {
+    color: #000;
+    width: 19px;
+    height: 18px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #ccc;
+    background: #E1F1FF;
+}
+
+table.calendarTableTime tbody a:hover {
+    color: #990;
+    width: 19px;
+    height: 18px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #ccc;
+    background: #E1F1FF;
+}
+
+table.calendarTableTime thead a.today {
+    width: 98% !important;
+    width: 100%
+}
+
+table.calendarTableTime thead a.today:hover {
+    width: 98% !important;
+    width: 100%
+}
+
+table.calendarTableTime td {
+    width: 21px;
+    height: 20px;
+    border-bottom: 1px solid #E6E6E6;
+    color: #fff;
+}
+
+table.calendarTableTime th {
+    height: 21px;
+}
+
+table.calendarTableTime tr.com {
+    background: #fff;
+}
+
+table.calendarTableTime tr.cur {
+    background: #F0FAFF;
+}
+
+table.calendarTableTime tbody a {
+    color: #000;
+    width: 19px;
+    height: 18px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #fff;
+}
+
+table.calendarTableTime tbody a:hover {
+    color: #990;
+    width: 19px;
+    height: 18px;
+    text-decoration: none;
+    border: 1px solid #E6E6E6;
+    background: #E1F1FF;
+    display: block;
+}
+
+table.calendarTableTime tbody a.today {
+    color: #c00;
+    border: 1px solid #DBDBDB;
+    background: #CCE4FF;
+}
+
+table.calendarTableTime tbody a.today:hover {
+    color: #990;
+    border: 1px solid #DBDBDB;
+    background: #CCE4FF;
+}
+
+table.calendarTableTime tbody a.week {
+    color: #c00;
+}
+
+div.calendarTfoot {
+    background: #EEE;
+    text-align: center;
+}
+
+div.calendarTfoot table {
+    width: 100%
+}
+
+table.calendarTfoot td {
+    background: #EEE;
+    width: auto;
+    text-align: center
+}
+
+table.calendarTfoot td span {
+    cursor: pointer;
+    display: block;
+    color: #000;
+}
+
+table.calendarTfoot td span {
+    cursor: pointer;
+    display: block;
+    color: #000;
+}
+
+table.calendarTfoot td.maohao {
+    text-align: center;
+    color: #000
+}
+
+table.calendarTfoot td input {
+    border: 1px solid #ccc;
+    background: #E1F1FF;
+}

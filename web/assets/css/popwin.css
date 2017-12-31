@@ -1,0 +1,83 @@
+body {margin:0px;padding:0;text-align:center;}
+#logo , #content , #foot{width:854px;border:0px;	margin:0 auto;}
+#logo{background:url(../image/ds_third_head_bg.jpg) top left repeat-x;height:98px;overflow:hidden;}
+#logo div.help{	float:left;width:150px;	height:98px;overflow:hidden;}
+#logo div.help input{background:url(../image/ds_third_help.gif) 0 0 no-repeat;width:80px;height:25px;border:0px;cursor:pointer;margin:32px 0 0 40px;}
+#logo div.logo{	background:Transparent url(../image/ds_third_logo.jpg) top right no-repeat;float:right;	width:358px;	height:100px;}
+#content{background:#EEE url(../image/ds_third_content_right_bg.jpg)  top right repeat-y;}
+#content #text{padding:25px 0;}
+#foot{background:url(../image/ds_third_foot_bg.jpg) top left repeat-x;clear:both;height:25px;}
+#foot div.l{ background:url(../image/ds_third_foot_left.jpg) top left no-repeat;	float:left;	width:21px;	height:25px;}
+#foot div.r{ background:url(../image/ds_third_foot_right.jpg) top right no-repeat;float:right;width:463px;height:25px;}
+
+/*title*/
+div.title {text-align:center;margin-bottom:15px;}
+div.title span.left {background: url(../image/third_title.gif) no-repeat center left; padding-left: 23px;}
+div.title span.left em{font:bold 15px/100%  "宋体",Arial,sans-serif;color: #CC0000;	letter-spacing: 2px;}
+div.title span.right{background: url(../image/third_title.gif) no-repeat center left; padding-right: 8px;}
+
+/*explain*/
+div.explain{clear:both; border:1px dashed #C49760; background:#FFF url(../image/popexplain.jpg) right bottom no-repeat;}
+div.explain div.text{ padding:10px 25px;border:1px solid #FFF; }
+div.explain div.etitle{ position: absolute;font:13px/150% "宋体",Arial,sans-serif;letter-spacing: 1px;width:50px;background:url(../image/explain_title.gif) no-repeat;height:20px;	}
+div.explain div.econtent{clear:none;padding-left:55px;color:#000; font:13px/150% "宋体",Arial,sans-serif;letter-spacing: 1px;}
+div.explain div.econtent ol { margin:0 10px;padding:0;}
+
+/*hint*/
+div.hint{text-align:left;width:92%;margin:0 auto 5px}
+
+/*datalist*/
+table.datalist{ border-left:1px solid #B68229;border-top:1px solid #B68229;border-collapse:collapse;}
+table.datalist th{white-space: nowrap;  background-color: #F7EDD2;border-right:1px solid #B68229;border-bottom:1px solid #B68229;letter-spacing: 1px;height:20px;text-align:center;line-height:20px;font-weight: normal;color:#000;}
+table.datalist th a{ color: #000;}
+table.datalist th a:hover{ color: #570000;}
+table.datalist tbody tr{ background:#FFF;}
+table.datalist tbody tr.over{ background:#FBF6A2;}
+table.datalist tbody tr.click{ background:#F5E8C2;}
+/*table.datalist tbody tr:hover{ background:#FBF5E6;}*/
+table.datalist tbody td{ border-right:1px solid #B68229;border-bottom:1px solid #B68229;letter-spacing: 1px;height:20px;line-height:20px;border-top:0	}
+
+/*form*/
+table.form {border-left:1px solid #B68229;	border-top:1px solid #B68229;border-collapse:separate;margin-bottom:1px;border-right:0;border-bottom:0;}
+table.form tbody{ border:0px;}
+table.form th{	background: #F7EDD2;white-space:nowrap;border-right:1px solid #B68229;	border-bottom:1px solid #B68229;	letter-spacing: 1px;	height:22px;	padding-left:8px;	padding-top:2px;	font-weight: normal;text-align:left;}
+table.form td{	border-right:1px solid #B68229;	border-bottom:1px solid #B68229;	background:#fff;	letter-spacing: 1px;	padding-left:4px;	padding-top:2px;padding-right:4px;}
+table.form td span.space{margin:0 10px;}
+
+/*submodule*/
+div.submodule{border:1px solid #C49760;background:#FDFBEE url(../image/moduledot.gif) 25px 8px no-repeat;}
+div.submodule div{margin-left:40px;height:25px;color:#900;font-size:13px;line-height:25px;letter-spacing:2px;}
+
+/*clew*/
+div.clew{border-width:1px;border-color:#C49760;border-style:dashed dashed solid dashed; margin-bottom:8px;background:#FFF}
+div.clew div{margin-left:10px;font-size:13px;}
+
+/*modeform*/
+
+/*label*/
+div.lable{	border-bottom:3px solid #F1DCA9;}
+div.lable li { float: left;	list-style-type: none;  	height: 18px; 	line-height: 18px; 	text-align: center; 	margin-right: 1px;}
+div.lable ul { background-color: #EEE; height: 18px;	margin:0;	padding:0; }
+div.lable a{ text-decoration: none;	color: #FFF;  	display: block; 	background:#9F9F9F;}
+div.lable a span{ text-decoration: none; 	color: #FFF;  	display: block; 	background:url(../image/poplable.jpg) right top no-repeat;	padding-right: 15px;	padding-left: 15px;}
+div.lable a:hover { text-decoration: none; color: #570000;display: block; background:#F1DCA9; }
+div.lable a:hover span{ text-decoration: none;color: #570000; display: block; background:url(../image/poplablecur.jpg) right top no-repeat;	padding-right: 15px; 	padding-left: 15px;}
+div.lable a.lablecur{ text-decoration: none;color: #570000;display: block; background:#F1DCA9;}
+div.lable a.lablecur span{ text-decoration: none; color: #570000; display: block;background:url(../image/poplablecur.jpg) right top no-repeat;	padding-right: 15px;padding-left: 15px;}
+
+/*datalistc*/
+table.datalistc{ width:92%;border:1px solid #C49760;background:#FFF;margin:0 auto;}
+table.datalistc th{height:21px;background:#E2C289;color:#000;font-size:13px;line-height:21px;text-align:center;white-space:nowrap;}
+table.datalistc th.second{height:18px;background:#E2C289;color:#333;font-size:13px;line-height:18px;}
+table.datalistc tbody tr{background:#F3EDD6;}
+table.datalistc tbody tr.over{ background: #EDDAB6;}
+table.datalistc tbody tr.click{ background: #AAB3C1;}
+table.datalistc td{line-height:130%;}
+table.datalistc td.sort{background:#EDDAB6;padding-left:15px;}
+table.datalistc td.r{text-align:right;padding-right:15px;}
+table.datalistc tbody tr td.line{height:1px;background:#C49760;}
+table.datalistc tbody tr td em.state{height:20px;line-height:20px;display:block;background:#F1E3C9;color:#C00;text-align:center;}
+
+/*error div*/
+div.error{	border-width:1px;border-style:dashed dashed solid dashed;border-color:#C49760;background:#FFF;margin-bottom:15px;}
+div.error p{ font:13px/150% "宋体",Arial,sans-serif;}

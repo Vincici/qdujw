@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jw.mapper.PermissionMapper">
+    <resultMap id="PermissionMapVO" type="com.jw.pojo.PermissionInfo">
+        <result column="permissionId" property="permissionId"/>
+        <result column="permissionName" property="permissionName"/>
+        <result column="url" property="url"/>
+    </resultMap>
+    <select id="getPermissionMenu" resultMap="PermissionMapVO">
+		SELECT DISTINCT
+		p.permissionId,
+		p.permissionName,
+		p.url
+		from
+		permission p,
+		role_permission rp
+		where
+		rp.roleId=#{roleId} and rp.permissionId=p.permissionId
+	</select>
+
+	<select id="getAllPermissionMenu" resultMap="PermissionMapVO">
+		SELECT DISTINCT
+		p.permissionId,
+		p.permissionName,
+		p.url
+		from
+		permission p
+	</select>
+</mapper>

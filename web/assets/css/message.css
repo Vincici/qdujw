@@ -1,0 +1,64 @@
+.field_set{
+    background-color:#F1F2F3;
+    border:1px solid #f8f8ff;
+    border-radius:8px;
+    text-align: left;
+}
+
+.field_set .content_div{
+    width:280px;
+    height:131px;
+    overflow:hidden;
+    word-wrap:break-word;
+    word-break: break-all;
+    margin:5px 0px 0px 5px;
+    padding-top:5px;
+    text-align: left;
+    overflow-y:auto
+}
+
+.field_set .title{
+    border:1px dashed #6D5589;
+    background-color:#f8f8ff;
+    text-align:center;
+    border-radius:8px;
+    letter-spacing:1px;
+}
+
+.field_set .button_new{
+    border: 1px solid gray;
+    background:-ms-linear-gradient(top, white,#EAF1FB,white); /* IE 10 */
+    background:-moz-linear-gradient(top,white,#EAF1FB,white); /*»ðºü*/
+    background:-webkit-gradient(top, white, #EAF1FB,white); /* Safari 4-5, Chrome 1-9*/
+    background:-webkit-linear-gradient(top, white, #EAF1FB,white); /*Safari5.1 Chrome 10+*/
+    background:-o-linear-gradient(top, white, #EAF1FB,white); /*Opera 11.10+*/
+    font:12px;
+    color:#1E4F7B;
+    height: 22px;
+    letter-spacing:1px;
+    cursor:pointer;
+    float: right;
+    margin-right: 2px;
+    border-radius: 6px;
+}
+
+.field_set .label_1{
+    color:#003366;font-weight: bold;
+}
+
+.field_set .label_2{
+    font-weight: bold;
+}
+
+
+.field_set .hr_div{
+    width: 100%;
+    height: 2px;
+    text-align: center;
+    margin: 8px 0px 8px 0px;
+    background:-ms-linear-gradient(left, #808080,#CCC,#F1F2F3); /* IE 10 */
+    background:-moz-linear-gradient(left,#808080,#CCC,#F1F2F3); /*»ðºü*/
+    background:-webkit-gradient(left, #808080,#CCC,#F1F2F3); /* Safari 4-5, Chrome 1-9*/
+    background:-webkit-linear-gradient(left, #808080,#CCC,#F1F2F3); /*Safari5.1 Chrome 10+*/
+    background:-o-linear-gradient(left, #808080,#CCC,#F1F2F3); /*Opera 11.10+*/
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc
+						http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+						http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+						http://www.springframework.org/schema/context
+          				http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+    <!--dispatcher-serlvet.xml-->
+
+    <!--自动扫描控制器相关的包-->
+    <context:component-scan base-package="com.jw">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter expression="org.springframework.stereotype.Service" type="annotation"/>
+    </context:component-scan>
+
+    <!-- 默认注解映射的支持 -->
+    <mvc:annotation-driven/>
+
+
+    <!--登录拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/admin/**"/>
+            <mvc:exclude-mapping path="/assets/**"/>
+            <bean class="com.jw.filter.AuthorizationInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+    <!-- 将在 SpringMVC 上下文中定义一个 – DefaultServletHttpRequestHandler，它会对进入 DispatcherServlet
+           的 请求进行筛查，如果发现是没有经过映射的请求，就将该请求交由 WEB 应用服务器默认的 Servlet 处理，
+           如果不是静态资源的请求，才由 DispatcherServlet继续处理 -->
+    <mvc:default-servlet-handler/>
+
+    <!--静态资源映射-->
+    <mvc:resources mapping="/assets/image/**" location="/assets/image/"/>
+    <!-- 内部资源视图解析器 -->
+    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>
