@@ -69,7 +69,7 @@ public class PermissonController implements CodeUtil {
     }
 
 
-    @RequestMapping(value = {"/allpermission"})
+    @RequestMapping(value = {"/api/allpermission"})
     public ModelAndView permission(HttpServletResponse response, HttpSession session) {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("/system/permissionManage");
