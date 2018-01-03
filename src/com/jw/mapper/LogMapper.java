@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
+ * 日志管理
  * @author mioko
  */
 @Repository(value = "LogMapper")
